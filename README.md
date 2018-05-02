@@ -1,87 +1,92 @@
-Ê¹ÓÃ·½·¨
-1¡¢ÒıÈëÎÄ¼ş
-
+### ä½¿ç”¨æ–¹æ³•
+1. å¼•å…¥æ–‡ä»¶
+```
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <script src="js/jquery.min.js"></script>
 
-<!-- jquery.easings.min.js ÊÇ±ØĞëµÄ£¬ÓÃÓÚ easing ²ÎÊı£¬Ò²¿ÉÒÔÊ¹ÓÃÍêÕûµÄ jQuery UI ´úÌæ -->
+<!-- jquery.easings.min.js æ˜¯å¿…é¡»çš„ï¼Œç”¨äº easing å‚æ•°ï¼Œä¹Ÿå¯ä»¥ä½¿ç”¨å®Œæ•´çš„ jQuery UI ä»£æ›¿ -->
 <script src="js/jquery.easings.min.js"></script>
 
-<!-- Èç¹û scrollOverflow ÉèÖÃÎª true£¬ÔòĞèÒªÒıÈë jquery.slimscroll.min.js£¬Ò»°ãÇé¿öÏÂ²»ĞèÒª -->
+<!-- å¦‚æœ scrollOverflow è®¾ç½®ä¸º trueï¼Œåˆ™éœ€è¦å¼•å…¥ jquery.slimscroll.min.jsï¼Œä¸€èˆ¬æƒ…å†µä¸‹ä¸éœ€è¦ -->
 <script src="js/jquery.slimscroll.min.js"></script>
 
 <script src="js/jquery.fullPage.js"></script>
+```
+2. HTML
 
-2¡¢HTML
-
+```
 <div id="fullpage">
-    <div class="section">µÚÒ»ÆÁ</div>
-    <div class="section">µÚ¶şÆÁ</div>
+    <div class="section">ç¬¬ä¸€å±</div>
+    <div class="section">ç¬¬äºŒå±</div>
     <div class="section">
-        <div class="slide">µÚÈıÆÁµÄµÚÒ»ÆÁ</div>
-        <div class="slide">µÚÈıÆÁµÄµÚ¶şÆÁ</div>
-        <div class="slide">µÚÈıÆÁµÄµÚÈıÆÁ</div>
-        <div class="slide">µÚÈıÆÁµÄµÚËÄÆÁ</div>
+        <div class="slide">ç¬¬ä¸‰å±çš„ç¬¬ä¸€å±</div>
+        <div class="slide">ç¬¬ä¸‰å±çš„ç¬¬äºŒå±</div>
+        <div class="slide">ç¬¬ä¸‰å±çš„ç¬¬ä¸‰å±</div>
+        <div class="slide">ç¬¬ä¸‰å±çš„ç¬¬å››å±</div>
     </div>
-    <div class="section">µÚËÄÆÁ</div>
+    <div class="section">ç¬¬å››å±</div>
 </div>
-
-3¡¢JavaScript
-
+```
+3. JavaScript
+```
 $(function(){
     $('#fullpage').fullpage();
 });
+```
+### é…ç½®
+1.é€‰é¡¹
 
-ÅäÖÃ
-1¡¢Ñ¡Ïî
-verticalCentered	×Ö·û´®	true	ÄÚÈİÊÇ·ñ´¹Ö±¾ÓÖĞ
-resize	²¼¶ûÖµ	false	×ÖÌåÊÇ·ñËæ×Å´°¿ÚËõ·Å¶øËõ·Å
-slidesColor	º¯Êı	ÎŞ	ÉèÖÃ±³¾°ÑÕÉ«
-anchors	Êı×é	ÎŞ	¶¨ÒåÃªÁ´½Ó
-scrollingSpeed	ÕûÊı	700	¹ö¶¯ËÙ¶È£¬µ¥Î»ÎªºÁÃë
-easing	×Ö·û´®	easeInQuart	¹ö¶¯¶¯»­·½Ê½
-menu	²¼¶ûÖµ	false	°ó¶¨²Ëµ¥£¬Éè¶¨µÄÏà¹ØÊôĞÔÓë anchors µÄÖµ¶ÔÓ¦ºó£¬²Ëµ¥¿ÉÒÔ¿ØÖÆ¹ö¶¯
-navigation	²¼¶ûÖµ	false	ÊÇ·ñÏÔÊ¾ÏîÄ¿µ¼º½
-navigationPosition	×Ö·û´®	right	ÏîÄ¿µ¼º½µÄÎ»ÖÃ£¬¿ÉÑ¡ left »ò right
-navigationColor	×Ö·û´®	#000	ÏîÄ¿µ¼º½µÄÑÕÉ«
-navigationTooltips	Êı×é	¿Õ	ÏîÄ¿µ¼º½µÄ tip
-slidesNavigation	²¼¶ûÖµ	false	ÊÇ·ñÏÔÊ¾×óÓÒ»¬¿éµÄÏîÄ¿µ¼º½
-slidesNavPosition	×Ö·û´®	bottom	×óÓÒ»¬¿éµÄÏîÄ¿µ¼º½µÄÎ»ÖÃ£¬¿ÉÑ¡ top »ò bottom
-controlArrowColor	×Ö·û´®	#fff	×óÓÒ»¬¿éµÄ¼ıÍ·µÄ±³¾°ÑÕÉ«
-loopBottom	²¼¶ûÖµ	false	¹ö¶¯µ½×îµ×²¿ºóÊÇ·ñ¹ö»Ø¶¥²¿
-loopTop	²¼¶ûÖµ	false	¹ö¶¯µ½×î¶¥²¿ºóÊÇ·ñ¹öµ×²¿
-loopHorizontal	²¼¶ûÖµ	true	×óÓÒ»¬¿éÊÇ·ñÑ­»·»¬¶¯
-autoScrolling	²¼¶ûÖµ	true	ÊÇ·ñÊ¹ÓÃ²å¼şµÄ¹ö¶¯·½Ê½£¬Èç¹ûÑ¡Ôñ false£¬Ôò»á³öÏÖä¯ÀÀÆ÷×Ô´øµÄ¹ö¶¯Ìõ
-scrollOverflow	²¼¶ûÖµ	false	ÄÚÈİ³¬¹ıÂúÆÁºóÊÇ·ñÏÔÊ¾¹ö¶¯Ìõ
-css3	²¼¶ûÖµ	false	ÊÇ·ñÊ¹ÓÃ CSS3 transforms ¹ö¶¯
-paddingTop	×Ö·û´®	0	Óë¶¥²¿µÄ¾àÀë
-paddingBottom	×Ö·û´®	0	Óëµ×²¿¾àÀë
-fixedElements	×Ö·û´®	ÎŞ	
-normalScrollElements		ÎŞ	
-keyboardScrolling	²¼¶ûÖµ	true	ÊÇ·ñÊ¹ÓÃ¼üÅÌ·½Ïò¼üµ¼º½
-touchSensitivity	ÕûÊı	5	
-continuousVertical	²¼¶ûÖµ	false	ÊÇ·ñÑ­»·¹ö¶¯£¬Óë loopTop ¼° loopBottom ²»¼æÈİ
-animateAnchor	²¼¶ûÖµ	true	
-normalScrollElementTouchThreshold	ÕûÊı	5	
-2¡¢·½·¨
-moveSectionUp()	ÏòÉÏ¹ö¶¯
-moveSectionDown()	ÏòÏÂ¹ö¶¯
-moveTo(section, slide)	¹ö¶¯µ½
-moveSlideRight()	slide ÏòÓÒ¹ö¶¯
-moveSlideLeft()	slide Ïò×ó¹ö¶¯
-setAutoScrolling()	ÉèÖÃÒ³Ãæ¹ö¶¯·½Ê½£¬ÉèÖÃÎª true Ê±×Ô¶¯¹ö¶¯
-setAllowScrolling()	Ìí¼Ó»òÉ¾³ıÊó±ê¹öÂÖ/´¥¿Ø°å¿ØÖÆ
-setKeyboardScrolling()	Ìí¼Ó»òÉ¾³ı¼üÅÌ·½Ïò¼ü¿ØÖÆ
-setScrollingSpeed()	¶¨ÒåÒÔºÁÃëÎªµ¥Î»µÄ¹ö¶¯ËÙ¶È
-3¡¢»Øµ÷º¯Êı
-afterLoad	¹ö¶¯µ½Ä³Ò»ÆÁºóµÄ»Øµ÷º¯Êı£¬½ÓÊÕ anchorLink ºÍ index Á½¸ö²ÎÊı£¬anchorLink ÊÇÃªÁ´½ÓµÄÃû³Æ£¬index ÊÇĞòºÅ£¬´Ó1¿ªÊ¼¼ÆËã
-onLeave	¹ö¶¯Ç°µÄ»Øµ÷º¯Êı£¬½ÓÊÕ index¡¢nextIndex ºÍ direction 3¸ö²ÎÊı£º
 
-index ÊÇÀë¿ªµÄ¡°Ò³Ãæ¡±µÄĞòºÅ£¬´Ó1¿ªÊ¼¼ÆËã£»
 
-nextIndex ÊÇ¹ö¶¯µ½µÄ¡°Ò³Ãæ¡±µÄĞòºÅ£¬´Ó1¿ªÊ¼¼ÆËã£»
+~~| ~~ |  ~~ | ~~
+----|------|---- |---
+verticalCentered | å­—ç¬¦ä¸² | true |å†…å®¹æ˜¯å¦å‚ç›´å±…ä¸­
+resize | å¸ƒå°”å€¼  | false |å­—ä½“æ˜¯å¦éšç€çª—å£ç¼©æ”¾è€Œç¼©æ”¾
+slidesColor | å‡½æ•°  | æ—  | è®¾ç½®èƒŒæ™¯é¢œè‰²
+anchors | æ•°ç»„  | æ—  | å®šä¹‰é”šé“¾æ¥
+scrollingSpeed | æ•´æ•°  | 700 | æ»šåŠ¨é€Ÿåº¦ï¼Œå•ä½ä¸ºæ¯«ç§’
+easing | å­—ç¬¦ä¸²  | easeInQuart | æ»šåŠ¨åŠ¨ç”»æ–¹å¼
+menu | å¸ƒå°”å€¼  | false | ç»‘å®šèœå•ï¼Œè®¾å®šçš„ç›¸å…³å±æ€§ä¸anchors çš„å€¼å¯¹åº”åï¼Œèœå•å¯ä»¥æ§åˆ¶æ»šåŠ¨
+navigation | å¸ƒå°”å€¼  | false | æ˜¯å¦æ˜¾ç¤ºé¡¹ç›®å¯¼èˆª
+navigationPosition | å­—ç¬¦ä¸²  | right | é¡¹ç›®å¯¼èˆªçš„ä½ç½®ï¼Œå¯é€‰ left æˆ– right
+navigationColor | å­—ç¬¦ä¸²  | #000 | é¡¹ç›®å¯¼èˆªçš„é¢œè‰²
+navigationTooltips | æ•°ç»„  | ç©º | é¡¹ç›®å¯¼èˆªçš„ tip
+slidesNavigation | å¸ƒå°”å€¼  | false | æ˜¯å¦æ˜¾ç¤ºå·¦å³æ»‘å—çš„é¡¹ç›®å¯¼èˆª
+slidesNavPosition | å­—ç¬¦ä¸²  | bottom | å·¦å³æ»‘å—çš„é¡¹ç›®å¯¼èˆªçš„ä½ç½®ï¼Œå¯é€‰ top æˆ– bottom
+controlArrowColor | å­—ç¬¦ä¸²  | #fff | å·¦å³æ»‘å—çš„ç®­å¤´çš„èƒŒæ™¯é¢œè‰²
+loopBottom | å¸ƒå°”å€¼  | false | æ»šåŠ¨åˆ°æœ€åº•éƒ¨åæ˜¯å¦æ»šå›é¡¶éƒ¨
+loopTop | å¸ƒå°”å€¼  | false | æ»šåŠ¨åˆ°æœ€é¡¶éƒ¨åæ˜¯å¦æ»šåº•éƒ¨
+loopHorizontal | å¸ƒå°”å€¼  | true | å·¦å³æ»‘å—æ˜¯å¦å¾ªç¯æ»‘åŠ¨
+autoScrolling | å¸ƒå°”å€¼  | true | æ˜¯å¦ä½¿ç”¨æ’ä»¶çš„æ»šåŠ¨æ–¹å¼ï¼Œå¦‚æœé€‰æ‹© falseï¼Œåˆ™ä¼šå‡ºç°æµè§ˆå™¨è‡ªå¸¦çš„æ»šåŠ¨æ¡
+scrollOverflow | å¸ƒå°”å€¼  | false | å†…å®¹è¶…è¿‡æ»¡å±åæ˜¯å¦æ˜¾ç¤ºæ»šåŠ¨æ¡
+css3 | å¸ƒå°”å€¼  | false | æ˜¯å¦ä½¿ç”¨ CSS3 transforms æ»šåŠ¨
+paddingTop | å­—ç¬¦ä¸²  | 0 | ä¸é¡¶éƒ¨çš„è·ç¦»
+paddingBottom | å­—ç¬¦ä¸²  | 0 | ä¸åº•éƒ¨è·ç¦»
+fixedElements | å­—ç¬¦ä¸²  | æ—  | ---
+normalScrollElements | æ—   | --- | ---
+keyboardScrolling | å¸ƒå°”å€¼  | true | æ˜¯å¦ä½¿ç”¨é”®ç›˜æ–¹å‘é”®å¯¼èˆª
+touchSensitivity | æ•´æ•°  | 5 | ---
+continuousVertical | å¸ƒå°”å€¼  | false | æ˜¯å¦å¾ªç¯æ»šåŠ¨ï¼Œä¸ loopTop åŠ loopBottom ä¸å…¼å®¹
+animateAnchor | å¸ƒå°”å€¼  | true | ---
+normalScrollElementTouchThreshold | æ•´æ•°  | 5 | ---
 
-direction ÅĞ¶ÏÍùÉÏ¹ö¶¯»¹ÊÇÍùÏÂ¹ö¶¯£¬ÖµÊÇ up »ò down¡£
-afterRender	Ò³Ãæ½á¹¹Éú³ÉºóµÄ»Øµ÷º¯Êı£¬»òÕßËµÒ³Ãæ³õÊ¼»¯Íê³ÉºóµÄ»Øµ÷º¯Êı
-afterSlideLoad	¹ö¶¯µ½Ä³Ò»Ë®Æ½»¬¿éºóµÄ»Øµ÷º¯Êı£¬Óë afterLoad ÀàËÆ£¬½ÓÊÕ anchorLink¡¢index¡¢slideIndex¡¢direction 4¸ö²ÎÊı
-onSlideLeave	Ä³Ò»Ë®Æ½»¬¿é¹ö¶¯Ç°µÄ»Øµ÷º¯Êı£¬Óë onLeave ÀàËÆ£¬½ÓÊÕ anchorLink¡¢index¡¢slideIndex¡¢direction 4¸ö²ÎÊı
+2. æ–¹æ³•
+
+
+~~ | ~~  | ~~ | ~~ 
+----|------|---- | ---
+moveSectionUp() | å‘ä¸Šæ»šåŠ¨  | moveSectionDown() | å‘ä¸‹æ»šåŠ¨
+moveTo(section, slide) | æ»šåŠ¨åˆ°  | moveSlideRight() | slide å‘å³æ»šåŠ¨
+moveSlideLeft() | slide å‘å·¦æ»šåŠ¨  | setAutoScrolling() | è®¾ç½®é¡µé¢æ»šåŠ¨æ–¹å¼ï¼Œè®¾ç½®ä¸º true æ—¶è‡ªåŠ¨æ»šåŠ¨
+setAllowScrolling() | æ·»åŠ æˆ–åˆ é™¤é¼ æ ‡æ»šè½®/è§¦æ§æ¿æ§åˆ¶  | setKeyboardScrolling() | æ·»åŠ æˆ–åˆ é™¤é”®ç›˜æ–¹å‘é”®æ§åˆ¶
+setScrollingSpeed() | å®šä¹‰ä»¥æ¯«ç§’ä¸ºå•ä½çš„æ»šåŠ¨é€Ÿåº¦  | --- | ---
+
+3. å›è°ƒå‡½æ•° 
+
+~~ | ~~  
+----|------
+afterLoad|æ»šåŠ¨åˆ°æŸä¸€å±åçš„å›è°ƒå‡½æ•°ï¼Œæ¥æ”¶ anchorLink å’Œ index ä¸¤ä¸ªå‚æ•°ï¼ŒanchorLink æ˜¯é”šé“¾æ¥çš„åç§°ï¼Œindex æ˜¯åºå·ï¼Œä»1å¼€å§‹è®¡ç®—
+onLeave|æ»šåŠ¨å‰çš„å›è°ƒå‡½æ•°ï¼Œæ¥æ”¶ indexã€nextIndex å’Œ direction 3ä¸ªå‚æ•°ï¼šindex æ˜¯ç¦»å¼€çš„â€œé¡µé¢â€çš„åºå·ï¼Œä»1å¼€å§‹è®¡ç®—ï¼›nextIndex æ˜¯æ»šåŠ¨åˆ°çš„â€œé¡µé¢â€çš„åºå·ï¼Œä»1å¼€å§‹è®¡ç®—ï¼›direction åˆ¤æ–­å¾€ä¸Šæ»šåŠ¨è¿˜æ˜¯å¾€ä¸‹æ»šåŠ¨ï¼Œå€¼æ˜¯ up æˆ– downã€‚
+afterRender|é¡µé¢ç»“æ„ç”Ÿæˆåçš„å›è°ƒå‡½æ•°ï¼Œæˆ–è€…è¯´é¡µé¢åˆå§‹åŒ–å®Œæˆåçš„å›è°ƒå‡½æ•°
+afterSlideLoad|æ»šåŠ¨åˆ°æŸä¸€æ°´å¹³æ»‘å—åçš„å›è°ƒå‡½æ•°ï¼Œä¸ afterLoad ç±»ä¼¼ï¼Œæ¥æ”¶ anchorLinkã€indexã€slideIndexã€direction 4ä¸ªå‚æ•°
+onSlideLeave|æŸä¸€æ°´å¹³æ»‘å—æ»šåŠ¨å‰çš„å›è°ƒå‡½æ•°ï¼Œä¸ onLeave ç±»ä¼¼ï¼Œæ¥æ”¶ anchorLinkã€indexã€slideIndexã€direction 4ä¸ªå‚æ•°
